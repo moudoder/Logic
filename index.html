@@ -13,7 +13,25 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header class="header">
+<div class="body-menu">
+	<a href="#" class="body-menu-item">
+		<div class="body-menu-item__left">
+			Быстрый заказ
+		</div>
+		<div class="body-menu-item__right">
+			<img src="img/box.png" alt="">
+		</div>
+	</a>
+	<a href="#" class="body-menu-item">
+		<div class="body-menu-item__left left-2">
+			онлайн калькулятор
+		</div>
+		<div class="body-menu-item__right">
+			<img src="img/calculator.png" alt="">
+		</div>
+	</a>
+</div>
+<header class="header" id="header">
 	<nav class="header-nav">
 		<div class="nav-top">
 			<div class="container">
@@ -24,6 +42,16 @@
 						Грузоперевозки по РФ и СНГ <br>
 						Весь груз застрахован
 					</span>
+					<span class="header-nav__logo__text_mob mob-true">
+						ООО <br>
+						«Логика Груза»
+					</span>
+					<a href="#" class="header-nav__phone_mob mob-true">
+						<img src="img/phn-mob.png" alt="">
+					</a>
+					<a href="#" class="header-nav__menu_mob mob-true">
+						<img src="img/Меню.png" alt="">
+					</a>
 				</a>
 				<div class="header-nav__block nav-block-1">
 					<img src="img/WhatsApp.svg" alt="" class="header-nav__block__img">
@@ -52,42 +80,42 @@
 			<div class="container">
 			<ul class="nav-list">
 				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
+					<a href="#header" class="nav-list__link">
 						предложение
 					</a>
 				</li>
 				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
+					<a href="#auto" class="nav-list__link">
 						наш транспорт
 					</a>
 				</li>
 				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
+					<a href="#transportation" class="nav-list__link">
 						виды грузов
 					</a>
 				</li>
 				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
+					<a href="#about" class="nav-list__link">
 						о компании
 					</a>
 				</li>
 				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
+					<a href="#advantage" class="nav-list__link">
 						преимущества
 					</a>
 				</li>
 				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
+					<a href="#reviews" class="nav-list__link">
 						отзывы
 					</a>
 				</li>
 				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
+					<a href="#compleks" class="nav-list__link">
 						наши услуги
 					</a>
 				</li>
 				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
+					<a href="#contacts" class="nav-list__link">
 						контакты
 					</a>
 				</li>
@@ -101,7 +129,7 @@
 				<div class="header-form">
 					<h3 class="header-form__title">
 						Индивидуальный расчет, учитываем все <br>
-						параметры доставки и как итог — <br>
+						параметры доставки и как итог — <br> <br class="mob-true">
 						<strong>Вы получаете минимальную цену</strong>
 					</h3>
 					<div class="header-form-row">
@@ -109,37 +137,40 @@
 							<span class="section-form-block__title">
 								Откуда
 							</span>
-							<input type="text" class="section-form-block__input" placeholder="">
+							<input type="text" class="section-form-block__input" placeholder="Москва">
 						</div>
 						<div class="section-form-block">
 							<span class="section-form-block__title">
 								Куда
 							</span>
-							<input type="text" class="section-form-block__input" placeholder="">
+							<input type="text" class="section-form-block__input" placeholder="Сочи">
 						</div>
-						<div class="section-form-block section-form-block-line">
+						<div class="section-form-block-line-wrapper">
+							<div class="section-form-block section-form-block-line">
+								<span class="section-form-block__title">
+									Укажите вес и характер груза
+								</span>
+								<input type="text" class="section-form-block__input" placeholder="Оборудование, 5 тонн">
+							</div>
+						</div>
+						
+						<div class="section-form-block">
 							<span class="section-form-block__title">
-								Куда
+								Ваше имя
 							</span>
-							<input type="text" class="section-form-block__input" placeholder="">
+							<input type="text" class="section-form-block__input" placeholder="Укажите имя">
 						</div>
 						<div class="section-form-block">
 							<span class="section-form-block__title">
-								Откуда
+								Ваш телефон/email
 							</span>
-							<input type="text" class="section-form-block__input" placeholder="">
-						</div>
-						<div class="section-form-block">
-							<span class="section-form-block__title">
-								Куда
-							</span>
-							<input type="text" class="section-form-block__input" placeholder="">
+							<input type="text" class="section-form-block__input" placeholder="+7 (777) 888-88-88">
 						</div>
 					</div>
 					<div class="section-form-btn-block">
-						<a href="#" class="section-form-btn">
+						<a href="#" class="section-form-btn body-btn">
 							<span><strong>РАССЧИТАТЬ СТОИМОСТЬ ДОСТАВКИ</strong> <br>
-							И ПОЛУЧИТЬ СТРАХОВАНИЕ ГРУЗА НА 1 МЛН РУБ</span>
+							<span class="span-2">И ПОЛУЧИТЬ СТРАХОВАНИЕ ГРУЗА НА 1 МЛН РУБ</span></span>
 						</a>
 						<input type="checkbox" id="checkx" checked name="checkbox-1" class="section-form-politic-display">
 						<label for="checkx" class="section-form-politic">
@@ -154,7 +185,7 @@
 					Выделенный транспорт  и сборные грузы от 100кг 
 				</h2>
 				<h1 class="header-title">
-					<strong>Грузоперевозки по России <br> и СНГ </strong> в Санкт-Петербурге <br>
+					<strong>Грузоперевозки по России <br> и СНГ </strong> <br class="mob-true">в Санкт-Петербурге <br>
 					с выгодой до 30%
 				</h1>
 				<h3 class="header-text">
@@ -187,7 +218,7 @@
 		</div>
 	</div>
 </header>
-<section class="auto">
+<section class="auto" id="auto">
 	<h2 class="section-title">
 		В нашей базе <strong>более 5100</strong> автомобилей
 	</h2>
@@ -534,18 +565,20 @@
 			</div>
 		</div>
 		<div class="section-arrows">
-			<div class="section-arrow section-arrow__left">
+			<a class="section-arrow section-arrow__left">
 				<img src="img/Arrow 6 (Stroke).png" alt="">
-			</div>
-			<div class="section-arrow section-arrow__right">
+			</a>
+			<a class="section-arrow section-arrow__right">
 				<img src="img/Arrow 5.png" alt="">
-			</div>
+			</a>
 		</div>
 	</div>
 </section>
-<section class="warranty">
+<section class="warranty" id="warranty">
 	<img src="img/Лого.png" alt="" class="warranty-logo">
+	<img src="img/log-mob.png" alt="" class="warranty-logo__mobile mob-true">
 	<div class="warranty-block">
+		<img src="img/mob-tr.png" alt="" class="warranty-mob-auto mob-true">
 		<h3 class="warranty-block__title">
 			Мы <strong>гарантируем:</strong>
 		</h3>
@@ -564,7 +597,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="warranty-list__item">
+			<div class="warranty-list__item ">
 				<img src="img/03.png" alt="" class="warranty-item__img">
 				<div class="warranty-list-text">
 					<span class="warranty-item__title">
@@ -575,7 +608,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="warranty-list__item">
+			<div class="warranty-list__item warranty-list__item_2">
 				<img src="img/02.png" alt="" class="warranty-item__img">
 				<div class="warranty-list-text">
 					<span class="warranty-item__title">
@@ -625,8 +658,8 @@
 					<input type="text" class="section-form-block__input" placeholder="Введите телефон/email">
 				</div>
 				<div class="section-form-btn-block">
-					<a href="#" class="section-form-btn">
-						подобрать транспорт
+					<a href="#" class="section-form-btn body-btn">
+						<span>подобрать транспорт</span>
 					</a>
 					<input type="checkbox" checked id="checkx" name="checkbox-1" class="section-form-politic-display">
 					<label for="checkx" class="section-form-politic">
@@ -638,10 +671,11 @@
 		</form>
 	</div>
 </section>
-<section class="transportation">
+<section class="transportation" id="transportation">
+	<img src="img/transport-mob-bg.png" alt="" class="transportation-bg_mob mob-true">
 	<div class="container">
 		<h2 class="section-title">
-			перевозка <strong>любых грузов</strong>
+			перевозка <br class="mob-true"><strong>любых грузов</strong>
 		</h2>
 		<h3 class="section-subtitle">
 			Работаем с клиентами из разных отраслей
@@ -695,7 +729,7 @@
 					<strong>переезды</strong>
 				</div>
 			</div>
-			<div class="transportation-block">
+			<div class="transportation-block transportation-block-7">
 				<img src="img/transportation (7).png" alt="" class="transportation-block__bg">
 				<img src="img/transportation_img (3).png" alt="" class="transportation-block__img">
 				<div class="transportation-block__title">
@@ -754,7 +788,7 @@
 	<div class="section-wrapper-form">
 		<form class="section-form">
 			<h3 class="section-form-title">
-				Не нашли <strong>Ваш груз? </strong>
+				Не нашли <br class="mob-true"><strong>Ваш груз? </strong>
 			</h3>
 			<div class="section-form-row">
 				<div class="section-form-block">
@@ -770,8 +804,8 @@
 					<input type="text" class="section-form-block__input" placeholder="Введите телефон/email">
 				</div>
 				<div class="section-form-btn-block">
-					<a href="#" class="section-form-btn">
-						получить предложение
+					<a href="#" class="section-form-btn body-btn">
+						<span>получить предложение</span>
 					</a>
 					<input type="checkbox" checked id="checkx" name="checkbox-1" class="section-form-politic-display">
 					<label for="checkx" class="section-form-politic">
@@ -783,7 +817,7 @@
 		</form>
 	</div>
 </section>
-<section class="about">
+<section class="about" id="about">
 	<img class="about-bg" src="img/about-bg.png" alt="">
 	<div class="container">
 		<div class="about-left">
@@ -851,7 +885,7 @@
 		</div>
 	</div>
 </section>
-<section class="reviews">
+<section class="reviews" id="reviews">
 	<div class="container">
 		<h2 class="section-title">
 			<strong>отзывы</strong> наших клиентов
@@ -873,8 +907,8 @@
 				<p class="reviews-block-text">
 					Выражаем признательность коллективу компании Логика Груза за сотрудничество в области организации транспортировки грузов по странам СНГ. Особенно хочется отметить оперативность и обеспечение полной сохранности перевозимых товаров, а так же...
 				</p>
-				<a href="#" class="reviews-block-btn">
-					читать отзыв полностью
+				<a href="#" class="reviews-block-btn body-btn">
+					<span>читать отзыв полностью</span>
 				</a>
 			</div>
 			<div class="reviews-block">
@@ -893,8 +927,8 @@
 				<p class="reviews-block-text">
 					Выражаем признательность коллективу компании Логика Груза за сотрудничество в области организации транспортировки грузов по странам СНГ. Особенно хочется отметить оперативность и обеспечение полной сохранности перевозимых товаров, а так же...
 				</p>
-				<a href="#" class="reviews-block-btn">
-					читать отзыв полностью
+				<a href="#" class="reviews-block-btn body-btn">
+					<span>читать отзыв полностью</span>
 				</a>
 			</div>
 			<div class="reviews-block">
@@ -913,8 +947,8 @@
 				<p class="reviews-block-text">
 					Выражаем благодарность ООО «Логика Груза» за грамотную организацию перевозок нашего оборудования. За время сотрудничества мы неоднократно убеждались в высочайших профессиональных и деловых качествах сотрудников компании....
 				</p>
-				<a href="#" class="reviews-block-btn">
-					читать отзыв полностью
+				<a href="#" class="reviews-block-btn body-btn">
+					<span>читать отзыв полностью</span>
 				</a>
 			</div>
 		</div>
@@ -937,8 +971,8 @@
 						<input type="text" class="section-form-block__input" placeholder="Введите телефон/email">
 					</div>
 					<div class="section-form-btn-block">
-						<a href="#" class="section-form-btn">
-							получить предложение
+						<a href="#" class="section-form-btn body-btn">
+							<span>получить предложение</span>
 						</a>
 						<input type="checkbox" checked id="checkx" name="checkbox-1" class="section-form-politic-display">
 						<label for="checkx" class="section-form-politic">
@@ -951,7 +985,7 @@
 		</div>
 	</div>
 </section>
-<section class="scheme">
+<section class="scheme" id="scheme">
 	<img src="img/shema-bg.png" alt="" class="scheme-bg">
 	<div class="container">
 		<h2 class="section-title">
@@ -1025,7 +1059,8 @@
 		</div>
 	</div>
 </section>
-<section class="advantage">
+<section class="advantage" id="advantage">
+	<img src="img/samolet.png" alt="" class="advantage-air">
 	<img src="img/adv-logo.png" alt="" class="advantage-logo">
 	<div class="container">
 		<h2 class="advantage-title">
@@ -1034,8 +1069,669 @@
 		<h3 class="advantage-subtitle">
 			Почему мы лучше других?
 		</h3>
+		<div class="advantage-row">
+			<div class="advantage-block">
+				<h4 class="advantage-block__title">
+					другие транспортные компании
+				</h4>
+				<ul class="advantage-block-list">
+					<li class="advantage-block-list__item">
+						Работают в одном городе
+					</li>
+					<li class="advantage-block-list__item">
+						Ограниченный автопарк
+					</li>
+					<li class="advantage-block-list__item">
+						Непостоянные водители
+					</li>
+					<li class="advantage-block-list__item">
+						Груз не застрахован
+					</li>
+					<li class="advantage-block-list__item">
+						Отсутствует <br>
+						гибкость в работе
+					</li>
+				</ul>
+				<img src="img/delivery-man-isolated-white-background-with-tired-sick-expression__1_-removebg 1.png" alt="" class="advantage-block__img">
+			</div>
+			<div class="advantage-block advantage-block-white">
+				<h4 class="advantage-block__title">
+					транспортная компания логика груза
+				</h4>
+				<ul class="advantage-block-list">
+					<li class="advantage-block-list__item">
+						Работают в одном городе
+					</li>
+					<li class="advantage-block-list__item">
+						Ограниченный автопарк
+					</li>
+					<li class="advantage-block-list__item">
+						Непостоянные водители
+					</li>
+					<li class="advantage-block-list__item">
+						Груз не застрахован
+					</li>
+					<li class="advantage-block-list__item">
+						Отсутствует <br>
+						гибкость в работе
+					</li>
+				</ul>
+				<img src="img/shutterstock_75239563 копия 1.png" alt="" class="advantage-block__img">
+			</div>
+		</div>
 	</div>
 </section>
+<section class="trust" id="trust">
+	<h2 class="section-title">
+		<img src="img/Круги.png" alt="" class="trust-krygi"> <br>
+		Нам <strong>доверяют</strong>
+	</h2>
+	<h3 class="section-subtitle">
+		Больше 300 компаний выбрали нас 
+	</h3>
+	<div class="trust-slider-wrapper">
+		<div class="trust-slider">
+			<div class="trust-slide-wrapper">
+				<div class="trust-slide">
+					<img src="img/log (1).png" alt="">
+				</div>
+				<div class="trust-slide wrapapper-center">
+					<img src="img/log (2).png" alt="">
+				</div>
+				<div class="trust-slide">
+					<img src="img/log (3).png" alt="">
+				</div>
+			</div>
+			<div class="trust-slide-wrapper">
+				<div class="trust-slide">
+					<img src="img/log (2).png" alt="">
+				</div>
+				<div class="trust-slide wrapapper-center">
+					<img src="img/log (1).png" alt="">
+				</div>
+				<div class="trust-slide">
+					<img src="img/log (3).png" alt="">
+				</div>
+			</div>
+			<div class="trust-slide-wrapper">
+				<div class="trust-slide">
+					<img src="img/log (2).png" alt="">
+				</div>
+				<div class="trust-slide wrapapper-center">
+					<img src="img/log (1).png" alt="">
+				</div>
+				<div class="trust-slide">
+					<img src="img/log (3).png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="section-arrows">
+			<div class="section-arrow section-arrow__left_t">
+				<img src="img/Arrow 6 (Stroke).png" alt="">
+			</div>
+			<div class="section-arrow section-arrow__right_t">
+				<img src="img/Arrow 5.png" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+<section class="cases" id="cases">
+	<img src="img/cases-bg.png" alt="" class="cases-bg">
+	<img src="img/auto-c.png" alt="" class="cases-auto">
+	<div class="container">
+		<h2 class="section-title">
+			НАШИ <strong>ВЫПОЛНЕННЫЕ ПЕРЕВОЗКИ</strong>
+		</h2>
+		<h3 class="section-subtitle">
+			Более 2500 перевозок в год
+		</h3>
+		<div class="cases-slider-wrapper">
+			<div class="cases-slider">
+				<div class="cases-slide">
+					<span class="cases-slide-name">
+						логика груза
+					</span>
+					<div class="cases-slide-left">
+						<div class="cases-slide-top">
+							<img src="img/big.png" alt="">
+						</div>
+						<div class="cases-slide-bottom">
+							<img src="img/small.png" alt="">
+							<img src="img/small.png" alt="">
+							<img src="img/small.png" alt="">
+						</div>
+					</div>
+					<div class="cases-slide-right">
+						<h2 class="cases-slide__title">
+							<strong>Небольшой заголовок</strong> <br>
+							в две строки с описанием
+						</h2>
+						<p class="cases-slide__text">
+							Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и.. Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и..
+							<br>
+							<br>
+							Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и..
+							<br>
+							<br>
+							Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и..
+						</p>
+					</div>
+				</div>
+				<div class="cases-slide">
+					<span class="cases-slide-name">
+						логика груза
+					</span>
+					<div class="cases-slide-left">
+						<div class="cases-slide-top">
+							<img src="img/big.png" alt="">
+						</div>
+						<div class="cases-slide-bottom">
+							<img src="img/small.png" alt="">
+							<img src="img/small.png" alt="">
+							<img src="img/small.png" alt="">
+						</div>
+					</div>
+					<div class="cases-slide-right">
+						<h2 class="cases-slide__title">
+							<strong>Небольшой заголовок</strong> <br>
+							в две строки с описанием
+						</h2>
+						<p class="cases-slide__text">
+							Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и.. Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и..
+							<br>
+							<br>
+							Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и..
+							<br>
+							<br>
+							Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и..
+						</p>
+					</div>
+				</div>
+				<div class="cases-slide">
+					<span class="cases-slide-name">
+						логика груза
+					</span>
+					<div class="cases-slide-left">
+						<div class="cases-slide-top">
+							<img src="img/big.png" alt="">
+						</div>
+						<div class="cases-slide-bottom">
+							<img src="img/small.png" alt="">
+							<img src="img/small.png" alt="">
+							<img src="img/small.png" alt="">
+						</div>
+					</div>
+					<div class="cases-slide-right">
+						<h2 class="cases-slide__title">
+							<strong>Небольшой заголовок</strong> <br>
+							в две строки с описанием
+						</h2>
+						<p class="cases-slide__text">
+							Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и.. Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и..
+							<br>
+							<br>
+							Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и..
+							<br>
+							<br>
+							Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и..
+						</p>
+					</div>
+				</div>
+				<div class="cases-slide">
+					<span class="cases-slide-name">
+						логика груза
+					</span>
+					<div class="cases-slide-left">
+						<div class="cases-slide-top">
+							<img src="img/big.png" alt="">
+						</div>
+						<div class="cases-slide-bottom">
+							<img src="img/small.png" alt="">
+							<img src="img/small.png" alt="">
+							<img src="img/small.png" alt="">
+						</div>
+					</div>
+					<div class="cases-slide-right">
+						<h2 class="cases-slide__title">
+							<strong>Небольшой заголовок</strong> <br>
+							в две строки с описанием
+						</h2>
+						<p class="cases-slide__text">
+							Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и.. Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и..
+							<br>
+							<br>
+							Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и..
+							<br>
+							<br>
+							Таким образом, повышение уровня гражданского сознания способствует повышению качества существующих финансовых и..
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="section-arrows">
+				<div class="section-arrow section-arrow__left_c">
+					<img src="img/Arrow 6 (Stroke).png" alt="">
+				</div>
+				<div class="section-arrow section-arrow__right_c">
+					<img src="img/Arrow 5.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="compleks" id="compleks">
+	<img src="img/compleks-bg.png" alt="" class="compleks-bg">
+	<div class="container">
+		<h2 class="section-title">
+			полный комплекс <br>
+			<strong>логистических услуг</strong>
+		</h2>
+		<h3 class="section-subtitle">
+			Качественное решение Ваших задач
+		</h3>
+		<div class="compleks-row">
+			<div class="compleks-block">
+				<img src="img/com-bg.png" alt="" class="compleks-block__bg">
+				<div class="compleks-block-text">
+					<h2 class="compleks-block__title">
+						Контейнерные перевозки
+					</h2>
+					<p class="compleks-block__text">
+						Экономичный способ перевозки грузов на дальние расстояния железнодорожным
+						и морским транспортом
+					</p>
+				</div>
+				<img src="img/cm (6).png" alt="" class="compleks-block__img">
+			</div>
+			<div class="compleks-block">
+				<img src="img/com-bg.png" alt="" class="compleks-block__bg">
+				<div class="compleks-block-text">
+					<h2 class="compleks-block__title">
+						Негабаритные перевозки
+					</h2>
+					<p class="compleks-block__text">
+						Транспортировка негабаритных грузов автомобильным, ж/д, морским и речным транспортом с соблюдением всех правил
+					</p>
+				</div>
+				<img src="img/cm (5).png" alt="" class="compleks-block__img">
+			</div>
+			<div class="compleks-block">
+				<img src="img/com-bg.png" alt="" class="compleks-block__bg">
+				<div class="compleks-block-text">
+					<h2 class="compleks-block__title">
+						Железнодорожные перевозки
+					</h2>
+					<p class="compleks-block__text">
+						Недорогие и стабильные перевозки стандартных, контейнерных и негабаритных грузов
+					</p>
+				</div>
+				<img src="img/cm (4).png" alt="" class="compleks-block__img">
+			</div>
+			<div class="compleks-block">
+				<img src="img/com-bg.png" alt="" class="compleks-block__bg">
+				<div class="compleks-block-text">
+					<h2 class="compleks-block__title">
+						Авиаперевозки
+					</h2>
+					<p class="compleks-block__text">
+						Быстрая авиадоставка грузов в любую точку мира независимо от размеров, услуги по оформлению документов
+					</p>
+				</div>
+				<img src="img/cm (3).png" alt="" class="compleks-block__img">
+			</div>
+			<div class="compleks-block">
+				<img src="img/com-bg.png" alt="" class="compleks-block__bg">
+				<div class="compleks-block-text">
+					<h2 class="compleks-block__title">
+						Складская обработка
+					</h2>
+					<p class="compleks-block__text">
+						Экономичный способ перевозки грузов на дальние расстояния железнодорожным
+						и морским транспортом
+					</p>
+				</div>
+				<img src="img/cm (2).png" alt="" class="compleks-block__img">
+			</div>
+			<div class="compleks-block">
+				<img src="img/com-bg.png" alt="" class="compleks-block__bg">
+				<div class="compleks-block-text">
+					<h2 class="compleks-block__title">
+						Доставка в сетевые магазины
+					</h2>
+					<p class="compleks-block__text">
+						Недорогие и стабильные перевозки стандартных, контейнерных и негабаритных грузов
+					</p>
+				</div>
+				<img src="img/cm (1).png" alt="" class="compleks-block__img">
+			</div>
+		</div>
+	</div>
+	<div class="section-wrapper-form">
+		<form class="section-form">
+			<h3 class="section-form-title">
+				Опишите Вашу задачу — <strong>мы найдем решение!</strong>
+			</h3>
+			<div class="section-form-row">
+				<div class="section-form-block">
+					<span class="section-form-block__title">
+						Ваше имя
+					</span>
+					<input type="text" class="section-form-block__input" placeholder="Укажите Ваше имя">
+				</div>
+				<div class="section-form-block">
+					<span class="section-form-block__title">
+						Введите телефон/email
+					</span>
+					<input type="text" class="section-form-block__input" placeholder="Введите телефон/email">
+				</div>
+				<div class="section-form-btn-block">
+					<a href="#" class="section-form-btn body-btn">
+						<span>получить предложение</span>
+					</a>
+					<input type="checkbox" checked id="checkx" name="checkbox-1" class="section-form-politic-display">
+					<label for="checkx" class="section-form-politic">
+						Я даю согласие на <a href="">обработку Персональных данных</a>, <br>
+						мы не храним и не распространяем Ваши данные
+					</label>
+				</div>
+			</div>
+		</form>
+	</div>
+</section>
+<section class="questions" id="questions">
+	<img src="img/questions-bg.png" alt="" class="questions-bg_left">
+	<img src="img/questions-logo.png" alt="" class="questions-bg_right">
+	<div class="container">
+		<div class="questions-row">
+			<div class="questions-left">
+				<h2 class="section-title">
+					остались <strong>вопросы?</strong>
+				</h2>
+				<h3 class="section-subtitle">
+					Более 2500 перевозок в год
+				</h3>
+				<div class="questions-block questions-block-active">
+					<div class="questions-block-top">
+						Вы работаете только с юридическими лицами?
+						<div class="questions-block-icon">
+							
+						</div>
+					</div>
+					<p class="questions-block-content">
+						Быстрая авиадоставка в любую точку мира независимо
+						от размеров, услуги по оформлению документов
+					</p>
+				</div>
+				<div class="questions-block">
+					<div class="questions-block-top">
+						Вы работаете только с юридическими лицами?
+						<div class="questions-block-icon">
+							
+						</div>
+					</div>
+					<p class="questions-block-content">
+						Быстрая авиадоставка в любую точку мира независимо
+						от размеров, услуги по оформлению документов
+					</p>
+				</div>
+				<div class="questions-block">
+					<div class="questions-block-top">
+						Вы работаете только с юридическими лицами?
+						<div class="questions-block-icon">
+							
+						</div>
+					</div>
+					<p class="questions-block-content">
+						Быстрая авиадоставка в любую точку мира независимо
+						от размеров, услуги по оформлению документов
+					</p>
+				</div>
+				<div class="questions-block">
+					<div class="questions-block-top">
+						Вы работаете только с юридическими лицами?
+						<div class="questions-block-icon">
+							
+						</div>
+					</div>
+					<p class="questions-block-content">
+						Быстрая авиадоставка в любую точку мира независимо
+						от размеров, услуги по оформлению документов
+					</p>
+				</div>
+			</div>
+			<div class="questions-right">
+				<form action="" class="questions-form">
+					<h3 class="questions-form__title">
+						<strong>Не нашли ответ </strong> <br>
+						на Ваш вопрос?
+					</h3>
+					<div class="section-form-block">
+						<span class="section-form-block__title">
+							Введите Email
+						</span>
+						<input type="text" class="section-form-block__input" placeholder="example@mail.ru">
+					</div>
+					<div class="section-form-block">
+						<span class="section-form-block__title">
+							Введите телефон
+						</span>
+						<input type="text" class="section-form-block__input" placeholder="+7 (777) 888-88-88">
+					</div>
+					<div class="section-form-btn-block">
+						<a href="#" class="section-form-btn body-btn">
+							<span>Обратиться к менеджеру</span>
+						</a>
+						<input type="checkbox" checked id="checkx" name="checkbox-1" class="section-form-politic-display">
+						<label for="checkx" class="section-form-politic">
+							Я даю согласие на <a href="">обработку Персональных данных</a>, <br>
+							мы не храним и не распространяем Ваши данные
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="contacts" id="contacts">
+	<div class="container">
+		<h2 class="section-title">
+			<strong>Наши контакты — </strong> <br>
+			свяжитесь с нами
+		</h2>
+		<div class="contacts-wrapper">
+			<div class="contacts-row">
+				<div class="contacts-block contacts-block-active">
+					<span class="contacts-block__title">
+						Головной офис
+					</span>
+					<p class="contacts-block__text">
+						— Санкт-Петербург, Московское <br>
+						шоссе 25 к.1 лит. А офис 813
+					</p>
+					<div class="contacts-info">
+						<a href="" class="contacts-info__item">
+							<img src="img/phone.png" alt="">
+							8 (800) 555-55-55
+						</a>
+						<br>
+						<a href="" class="contacts-info__item">
+							<img src="img/email.png" alt="">
+							info@logika-gruzza.ru
+						</a>
+					</div>
+				</div>
+				<div class="contacts-block">
+					<span class="contacts-block__title">
+						Центральный склад
+					</span>
+					<p class="contacts-block__text">
+						— п. Шушары, ул. Пушкинская, 27/3
+					</p>
+				</div>
+				<div class="contacts-block">
+					<span class="contacts-block__title">
+						Представительство
+					</span>
+					<p class="contacts-block__text">
+						— Химки, Московская Область, ул. <br>
+						 Аэропортовская, стр 2, д. Дубовки
+					</p>
+				</div>
+			</div>
+			<div class="contacts-right">
+				<div class="contacts-top">
+					<img src="img/map-top.png" alt="">
+				</div>
+				<div class="contacts-map">
+					<img src="img/map-bottom.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="job" id="job">
+	<div class="container">
+		<div class="job-block">
+			<img src="img/КП 1.png" alt="" class="job-block-kp">
+			<div class="job-text">
+				<h3 class="job-text__title">
+					хотите 
+					<strong>работать <br>с нами?</strong>
+				</h3>
+				<p class="job-text__subtitle">
+					Заполните форму, и мы подготовим для Вас
+					персональное коммерческое предложение
+				</p>
+				<div class="section-form-block">
+					<span class="section-form-block__title">
+						Напишите, пожалуйста, Ваши основные
+						направления, наименование груза
+					</span>
+					<input type="text" class="section-form-block__input" placeholder="Москва-Сочи, грузоперевозки">
+				</div>
+				<div class="job-way">
+					<span class="job-way__title">
+						Выберите удобный способ связи:
+					</span>
+					<div class="job-way-wrapper">
+						<div class="job-way-block">
+							<img src="img/whatsapp (1) 1.png" alt="" class="job-way__img">
+							WhatsApp
+						</div>
+						<div class="job-way-block">
+							<img src="img/tl.png" alt="" class="job-way__img">
+							Telegram
+						</div>
+						<div class="job-way-block">
+							<img src="img/Group 9.png" alt="" class="job-way__img">
+							Viber
+						</div>
+					</div>
+					<div class="section-form-block">
+						<span class="section-form-block__title">
+							Введите телефон
+						</span>
+						<input type="text" class="section-form-block__input" placeholder="+7 (777) 888-88-88">
+					</div>
+					<div class="section-form-btn-block">
+						<a href="#" class="section-form-btn body-btn">
+							<span>Обратиться к менеджеру</span>
+						</a>
+						<input type="checkbox" checked id="checkx" name="checkbox-1" class="section-form-politic-display">
+						<label for="checkx" class="section-form-politic">
+							Я даю согласие на <a href="">обработку Персональных данных</a>, <br>
+							мы не храним и не распространяем Ваши данные
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer" id="footer">
+	<div class="footer-top">
+		<div class="container">
+			<div class="footer-top-left">
+				<img src="img/logo-footer.png" alt="" class="footer-logo">
+				<p class="footer-top__text">
+					Грузоперевозки по России и СНГ
+					Опыт в логистике <strong>более 10 лет
+					Весь груз застрахован</strong>
+				</p>
+			</div>
+			<div class="footer-top-center">
+				<div class="header-nav__block nav-block-1">
+					<img src="img/WhatsApp.svg" alt="" class="header-nav__block__img">
+					<span class="header-nav__block__text">
+						Получите <strong>точный расчет доставки </strong>
+						в <a href="">WhatsApp</a> за 1 минуту
+					</span>
+				</div>
+				<div class="header-nav__block">
+					<img src="img/Иконка.png" alt="" class="header-nav__block__img">
+					<span class="header-nav__block__text">
+						<a href="" class="nav__mail">info@logika-gruzza.ru</a> <br>
+						Почта для Ваших заявок
+					</span>
+				</div>
+			</div>
+			<div class="footer-top-right">
+				<div class="footer-top-block">
+					<a href="#" class="footer-top__number">
+						<img src="img/phn.png" alt="">
+						8 (800) 555-55-55
+					</a>
+					<span class="footer-top-block__text">
+						— Бесплатный звонок по России
+					</span>
+				</div>
+				<div class="footer-top-block">
+					<a href="#" class="footer-top__number">
+						<img src="img/phn.png" alt="">
+						8 (812) 333-03-84
+					</a>
+					<span class="footer-top-block__text">
+						— Санкт-Петербург
+					</span>
+				</div>
+				<div class="footer-top-block">
+					<a href="#" class="footer-top__number">
+						<img src="img/phn.png" alt="">
+						8 (495) 333-03-84
+					</a>
+					<span class="footer-top-block__text">
+						— Москва
+					</span>
+				</div>
+				<div class="footer-top-block">
+					<a href="#" class="footer-top__btn body-btn">
+						<span>перезвоните мне</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="footer-bottom-left">
+				<span class="footer-bottom__text">
+					© ООО «Логика Груза». Все права защищены.
+				</span>
+				<span class="footer-bottom__text">
+					ИНН 32342323
+				</span>
+			</div>
+			<div class="footer-bottom-right">
+				<span class="footer-bottom__text">
+					Политика конфиденциальности
+				</span>
+				<span class="footer-bottom__text">
+					Обработка персональных данных
+				</span>
+			</div>
+		</div>
+	</div>
+</footer>
 <!-- libs js -->
 <script src="js/libs.min.js"></script>
 <script src="js/common.js"></script>
