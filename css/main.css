@@ -41,7 +41,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-
+.header-left{
+  z-index: 1000000;
+}
 .nav-top {
   padding-bottom: 25.5px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
