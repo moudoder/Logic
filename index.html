@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="body-menu">
+<div class="body-menu animated fadeInRight slower">
 	<a href="#" class="body-menu-item">
 		<div class="body-menu-item__left">
 			Быстрый заказ
@@ -31,8 +31,82 @@
 		</div>
 	</a>
 </div>
+<div class="mobile-menu mob-true">
+	<img src="img/close_icon.png" alt="" class="mobile-menu__close">
+	<a href="/" class="header-nav__logo">
+		<img src="img/logo.svg" alt="">
+		<span class="header-nav__logo__text">
+			ООО «Логика Груза» <br>
+			Грузоперевозки по РФ и СНГ <br>
+			Весь груз застрахован
+		</span>
+	</a>
+	<div class="header-nav__block nav-block-1">
+		<img src="img/WhatsApp.svg" alt="" class="header-nav__block__img">
+		<span class="header-nav__block__text">
+			Получите <strong>точный расчет доставки </strong> <br>
+			в <a href="">WhatsApp</a> за 1 минуту
+		</span>
+	</div>
+	<div class="header-nav__block">
+		<img src="img/Иконка.png" alt="" class="header-nav__block__img">
+		<span class="header-nav__block__text">
+			<a href="" class="nav__mail">info@logika-gruzza.ru</a> <br>
+			Почта для Ваших заявок
+		</span>
+	</div>
+	<div class="header-nav__block header-nav__block_em">
+		<img src="img/Иконка (2).svg" alt="" class="header-nav__block__img">
+		<span class="header-nav__block__text">
+			<a href="" class="nav__mail nav__phn">8 (800) 555-55-55</a> <br>
+			<a href="" class="nav__phone">Нужен обратный звонок</a>
+		</span>
+	</div>
+	<ul class="nav-list">
+		<li class="nav-list__item">
+			<a href="#header" class="nav-list__link">
+				предложение
+			</a>
+		</li>
+		<li class="nav-list__item">
+			<a href="#auto" class="nav-list__link">
+				наш транспорт
+			</a>
+		</li>
+		<li class="nav-list__item">
+			<a href="#transportation" class="nav-list__link">
+				виды грузов
+			</a>
+		</li>
+		<li class="nav-list__item">
+			<a href="#about" class="nav-list__link">
+				о компании
+			</a>
+		</li>
+		<li class="nav-list__item">
+			<a href="#advantage" class="nav-list__link">
+				преимущества
+			</a>
+		</li>
+		<li class="nav-list__item">
+			<a href="#reviews" class="nav-list__link">
+				отзывы
+			</a>
+		</li>
+		<li class="nav-list__item">
+			<a href="#compleks" class="nav-list__link">
+				наши услуги
+			</a>
+		</li>
+		<li class="nav-list__item">
+			<a href="#contacts" class="nav-list__link">
+				контакты
+			</a>
+		</li>
+	</ul>
+</div>
 <header class="header" id="header">
-	<nav class="header-nav">
+	<nav class="header-nav wow fadeInUp">
 		<div class="nav-top">
 			<div class="container">
 				<a href="/" class="header-nav__logo">
@@ -125,62 +199,65 @@
 	</nav>
 	<div class="header-content">
 		<div class="container header-row">
-			<div class="header-left">
+			<div class="header-left wow fadeInLeft">
 				<div class="header-form">
-					<h3 class="header-form__title">
-						Индивидуальный расчет, учитываем все <br>
-						параметры доставки и как итог — <br> <br class="mob-true">
-						<strong>Вы получаете минимальную цену</strong>
-					</h3>
-					<div class="header-form-row">
-						<div class="section-form-block">
-							<span class="section-form-block__title">
-								Откуда
-							</span>
-							<input type="text" class="section-form-block__input" placeholder="Москва">
-						</div>
-						<div class="section-form-block">
-							<span class="section-form-block__title">
-								Куда
-							</span>
-							<input type="text" class="section-form-block__input" placeholder="Сочи">
-						</div>
-						<div class="section-form-block-line-wrapper">
-							<div class="section-form-block section-form-block-line">
+					<div class="header-form-z">
+						<h3 class="header-form__title">
+							Индивидуальный расчет, учитываем все <br>
+							параметры доставки и как итог — <br> <br class="mob-true">
+							<strong>Вы получаете минимальную цену</strong>
+						</h3>
+						<div class="header-form-row">
+							<div class="section-form-block">
 								<span class="section-form-block__title">
-									Укажите вес и характер груза
+									Откуда
 								</span>
-								<input type="text" class="section-form-block__input" placeholder="Оборудование, 5 тонн">
+								<input type="text" class="section-form-block__input" placeholder="Москва">
+							</div>
+							<div class="section-form-block">
+								<span class="section-form-block__title">
+									Куда
+								</span>
+								<input type="text" class="section-form-block__input" placeholder="Сочи">
+							</div>
+							<div class="section-form-block-line-wrapper">
+								<div class="section-form-block section-form-block-line">
+									<span class="section-form-block__title">
+										Укажите вес и характер груза
+									</span>
+									<input type="text" class="section-form-block__input" placeholder="Оборудование, 5 тонн">
+								</div>
+							</div>
+							
+							<div class="section-form-block">
+								<span class="section-form-block__title">
+									Ваше имя
+								</span>
+								<input type="text" class="section-form-block__input" placeholder="Укажите имя">
+							</div>
+							<div class="section-form-block">
+								<span class="section-form-block__title">
+									Ваш телефон/email
+								</span>
+								<input type="text" class="section-form-block__input" placeholder="+7 (777) 888-88-88">
 							</div>
 						</div>
-						
-						<div class="section-form-block">
-							<span class="section-form-block__title">
-								Ваше имя
-							</span>
-							<input type="text" class="section-form-block__input" placeholder="Укажите имя">
-						</div>
-						<div class="section-form-block">
-							<span class="section-form-block__title">
-								Ваш телефон/email
-							</span>
-							<input type="text" class="section-form-block__input" placeholder="+7 (777) 888-88-88">
+						<div class="section-form-btn-block">
+							<a href="#" class="section-form-btn body-btn">
+								<span><strong>РАССЧИТАТЬ СТОИМОСТЬ ДОСТАВКИ</strong> <br>
+								<span class="span-2">И ПОЛУЧИТЬ СТРАХОВАНИЕ ГРУЗА НА 1 МЛН РУБ</span></span>
+							</a>
+							<input type="checkbox" id="checkx" checked name="checkbox-1" class="section-form-politic-display">
+							<label for="checkx" class="section-form-politic">
+								Я даю согласие на <a href="">обработку Персональных данных</a>, <br>
+								мы не храним и не распространяем Ваши данные
+							</label>
 						</div>
 					</div>
-					<div class="section-form-btn-block">
-						<a href="#" class="section-form-btn body-btn">
-							<span><strong>РАССЧИТАТЬ СТОИМОСТЬ ДОСТАВКИ</strong> <br>
-							<span class="span-2">И ПОЛУЧИТЬ СТРАХОВАНИЕ ГРУЗА НА 1 МЛН РУБ</span></span>
-						</a>
-						<input type="checkbox" id="checkx" checked name="checkbox-1" class="section-form-politic-display">
-						<label for="checkx" class="section-form-politic">
-							Я даю согласие на <a href="">обработку Персональных данных</a>, <br>
-							мы не храним и не распространяем Ваши данные
-						</label>
-					</div>
+					
 				</div>
 			</div>
-			<div class="header-right">
+			<div class="header-right wow fadeInRight">
 				<h2 class="header-subtitle">
 					Выделенный транспорт  и сборные грузы от 100кг 
 				</h2>
@@ -194,8 +271,8 @@
 			</div>
 			<img src="img/Автомобиль.png" alt="" class="header-content__auto">
 		</div>
-		<div class="header-bottom">
-			<div class="container">
+		<div class="header-bottom ">
+			<div class="container wow fadeInDown">
 				<div class="header-block header-block-1">
 					<span class="header-block__text">
 						В базе более <strong>1100 <br>авто, 1100 городов <br>доставки</strong>
@@ -219,14 +296,14 @@
 	</div>
 </header>
 <section class="auto" id="auto">
-	<h2 class="section-title">
+	<h2 class="section-title wow fadeInUp">
 		В нашей базе <strong>более 5100</strong> автомобилей
 	</h2>
-	<h3 class="section-subtitle">
+	<h3 class="section-subtitle wow fadeInUp">
 		Подача в любой город России за 2 часа
 	</h3>
 	<div class="auto-wrapper">
-		<div class="auto-row">
+		<div class="auto-row wow fadeInDown">
 			<div class="auto-slide">
 				<div class="auto-block">
 					<div class="auto-block-wrapper">
@@ -579,13 +656,13 @@
 	<img src="img/log-mob.png" alt="" class="warranty-logo__mobile mob-true">
 	<div class="warranty-block">
 		<img src="img/mob-tr.png" alt="" class="warranty-mob-auto mob-true">
-		<h3 class="warranty-block__title">
+		<h3 class="warranty-block__title wow fadeInUp">
 			Мы <strong>гарантируем:</strong>
 		</h3>
-		<h4 class="warranty-block__subtitle">
+		<h4 class="warranty-block__subtitle wow fadeInUp">
 			Почему стоит выбрать нас?
 		</h4>
-		<div class="warranty-block-list">
+		<div class="warranty-block-list wow fadeInUp">
 			<div class="warranty-list__item warranty-list__item_1">
 				<img src="img/01.png" alt="" class="warranty-item__img">
 				<div class="warranty-list-text">
@@ -631,7 +708,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="warranty-block-map">
+		<div class="warranty-block-map wow fadeInUp">
 			<img src="img/map.png" alt="">
 			<span>
 				А так же <strong>GPS-отслеживание <br>
@@ -640,7 +717,7 @@
 		</div>
 	</div>
 	<div class="section-wrapper-form">
-		<form class="section-form">
+		<form class="section-form wow fadeInUp">
 			<h3 class="section-form-title">
 				Не знаете, <strong>какой транспорт</strong> Вам подойдет?
 			</h3>
@@ -674,14 +751,14 @@
 <section class="transportation" id="transportation">
 	<img src="img/transport-mob-bg.png" alt="" class="transportation-bg_mob mob-true">
 	<div class="container">
-		<h2 class="section-title">
+		<h2 class="section-title wow fadeInUp">
 			перевозка <br class="mob-true"><strong>любых грузов</strong>
 		</h2>
-		<h3 class="section-subtitle">
+		<h3 class="section-subtitle wow fadeInUp">
 			Работаем с клиентами из разных отраслей
 		</h3>
 		<div class="transportation-row">
-			<div class="transportation-block">
+			<div class="transportation-block wow fadeInUp" data-wow-delay="0.2s">
 				<img src="img/transportation (1).png" alt="" class="transportation-block__bg">
 				<img src="img/transportation_img (1).png" alt="" class="transportation-block__img">
 				<div class="transportation-block__title">
@@ -689,7 +766,7 @@
 					материалы
 				</div>
 			</div>
-			<div class="transportation-block transportation-block-2">
+			<div class="transportation-block transportation-block-2 wow fadeInUp" data-wow-delay="0.4s">
 				<img src="img/transportation (2).png" alt="" class="transportation-block__bg">
 				<img src="img/transportation_img (8).png" alt="" class="transportation-block__img">
 				<div class="transportation-block__title">
@@ -697,7 +774,7 @@
 					и бумага
 				</div>
 			</div>
-			<div class="transportation-block transportation-block-3">
+			<div class="transportation-block transportation-block-3 wow fadeInUp" data-wow-delay="0.6s">
 				<img src="img/transportation (3).png" alt="" class="transportation-block__bg">
 				<img src="img/transportation_img (7).png" alt="" class="transportation-block__img">
 				<div class="transportation-block__title">
@@ -705,7 +782,7 @@
 					и оборудование
 				</div>
 			</div>
-			<div class="transportation-block">
+			<div class="transportation-block wow fadeInUp" data-wow-delay="0.8s">
 				<img src="img/transportation (4).png" alt="" class="transportation-block__bg">
 				<img src="img/transportation_img (6).png" alt="" class="transportation-block__img">
 				<div class="transportation-block__title">
@@ -713,7 +790,7 @@
 					и сельзоз. продукция
 				</div>
 			</div>
-			<div class="transportation-block">
+			<div class="transportation-block wow fadeInUp" data-wow-delay="1s">
 				<img src="img/transportation (5).png" alt="" class="transportation-block__bg">
 				<img src="img/transportation_img (5).png" alt="" class="transportation-block__img">
 				<div class="transportation-block__title">
@@ -721,7 +798,7 @@
 					и обувь
 				</div>
 			</div>
-			<div class="transportation-block transportation-block-6">
+			<div class="transportation-block transportation-block-6 wow fadeInUp" data-wow-delay="1.2s">
 				<img src="img/transportation (6).png" alt="" class="transportation-block__bg">
 				<img src="img/transportation_img (4).png" alt="" class="transportation-block__img">
 				<div class="transportation-block__title">
@@ -729,7 +806,7 @@
 					<strong>переезды</strong>
 				</div>
 			</div>
-			<div class="transportation-block transportation-block-7">
+			<div class="transportation-block transportation-block-7 wow fadeInUp" data-wow-delay="1.4s">
 				<img src="img/transportation (7).png" alt="" class="transportation-block__bg">
 				<img src="img/transportation_img (3).png" alt="" class="transportation-block__img">
 				<div class="transportation-block__title">
@@ -737,7 +814,7 @@
 					потребления
 				</div>
 			</div>
-			<div class="transportation-block">
+			<div class="transportation-block wow fadeInUp" data-wow-delay="1.6s">
 				<img src="img/transportation (8).png" alt="" class="transportation-block__bg">
 				<img src="img/transportation_img (2).png" alt="" class="transportation-block__img">
 				<div class="transportation-block__title">
@@ -747,7 +824,7 @@
 		</div>
 	</div>
 	<div class="transportation-bottom">
-		<div class="transportation-row-bottom">
+		<div class="transportation-row-bottom wow fadeInUp">
 			<div class="transportation-row-left tr-auto">
 				<div class="transportation-bottom-block">
 					<div class="transportation-bottom-icon">
@@ -786,7 +863,7 @@
 		</div>
 	</div>
 	<div class="section-wrapper-form">
-		<form class="section-form">
+		<form class="section-form wow fadeInUp">
 			<h3 class="section-form-title">
 				Не нашли <br class="mob-true"><strong>Ваш груз? </strong>
 			</h3>
@@ -818,9 +895,10 @@
 	</div>
 </section>
 <section class="about" id="about">
-	<img class="about-bg" src="img/about-bg.png" alt="">
+	<img class="about-bg pc-true" src="img/about-bg.png" alt="">
+	<img class="about-bg mob-true" src="img/about-bg-mob.png" alt="">
 	<div class="container">
-		<div class="about-left">
+		<div class="about-left wow fadeInLeft">
 			<h2 class="about-title">
 				<strong>о транспортной компании</strong> <br>
 				«логика груза» <span>Ваш надежный партнер</span>
@@ -846,16 +924,22 @@
 				</p>
 			</div>
 		</div>
-		<div class="about-right">
+		<div class="about-right wow fadeInRight">
 			<img src="img/pht (1).png" alt="">
 			<img src="img/pht (3).png" alt="">
 			<img src="img/pht (2).png" alt="">
 		</div>
+		<div class="about-right-mob mob-true fadeInUp">
+			<img src="img/cases-img-mb (1).png" alt="">
+			<img src="img/cases-img-mb (2).png" alt="">
+			<img src="img/cases-img-mb (3).png" alt="">
+		</div>
 	</div>
-	<div class="about-bottom">
-		<div class="about-bottom-block">
+	<div class="about-bottom ">
+		<div class="about-bottom-block about-bottom-block-top wow fadeInUp" data-wow-delay="0.2s">
 			<img src="img/lft.png" alt="" class="about-bottom-block__img">
 			<div class="about-bottom__icon">
+				<img src="img/icon-2.png" alt="" class="mob-true">
 				<img src="img/Иконка (1).png" alt="">
 			</div>
 			<h4 class="about-bottom__title">
@@ -863,9 +947,10 @@
 				<strong>более 8 лет</strong>
 			</h4>
 		</div>
-		<div class="about-bottom-block about-bottom-block__center">
+		<div class="about-bottom-block about-bottom-block__center wow fadeInUp" data-wow-delay="0.4s">
 			<img src="img/center.png" alt="" class="about-bottom-block__img">
 			<div class="about-bottom__icon">
+				<img src="img/icon-1.png" alt="" class="mob-true">
 				<img src="img/Иконка 3.png" alt="">
 			</div>
 			<h4 class="about-bottom__title">
@@ -873,9 +958,10 @@
 				застрахована</strong>
 			</h4>
 		</div>
-		<div class="about-bottom-block">
+		<div class="about-bottom-block wow fadeInUp" data-wow-delay="0.6s">
 			<img src="img/rght.png" alt="" class="about-bottom-block__img">
 			<div class="about-bottom__icon">
+				<img src="img/icon-3.png" alt="" class="mob-true">
 				<img src="img/Иконка (2).png" alt="">
 			</div>
 			<h4 class="about-bottom__title">
@@ -887,11 +973,11 @@
 </section>
 <section class="reviews" id="reviews">
 	<div class="container">
-		<h2 class="section-title">
+		<h2 class="section-title wow fadeInUp">
 			<strong>отзывы</strong> наших клиентов
 		</h2>
 		<div class="reviews-row">
-			<div class="reviews-block">
+			<div class="reviews-block wow fadeInLeft" data-wow-delay="0.2s">
 				<div class="reviews-block-top">
 					<img src="img/avatar-1.png" alt="" class="reviews-block__avatar">
 					<div class="reviews-block-info">
@@ -911,7 +997,7 @@
 					<span>читать отзыв полностью</span>
 				</a>
 			</div>
-			<div class="reviews-block">
+			<div class="reviews-block wow fadeInLeft" data-wow-delay="0.4s">
 				<div class="reviews-block-top">
 					<img src="img/avatar-2.png" alt="" class="reviews-block__avatar">
 					<div class="reviews-block-info">
@@ -931,7 +1017,7 @@
 					<span>читать отзыв полностью</span>
 				</a>
 			</div>
-			<div class="reviews-block">
+			<div class="reviews-block wow fadeInLeft" data-wow-delay="0.6s">
 				<div class="reviews-block-top">
 					<img src="img/avatar-3.png" alt="" class="reviews-block__avatar">
 					<div class="reviews-block-info">
@@ -953,7 +1039,7 @@
 			</div>
 		</div>
 		<div class="section-wrapper-form">
-			<form class="section-form">
+			<form class="section-form wow fadeInUp">
 				<h3 class="section-form-title">
 					<strong>Специальное предложение</strong> для новых клиентов:
 				</h3>
@@ -986,16 +1072,17 @@
 	</div>
 </section>
 <section class="scheme" id="scheme">
-	<img src="img/shema-bg.png" alt="" class="scheme-bg">
+	<img src="img/shema-bg.png" alt="" class="scheme-bg pc-true">
+	<img src="img/sheme-bg-mob.png" alt="" class="scheme-bg mob-true">
 	<div class="container">
-		<h2 class="section-title">
+		<h2 class="section-title wow fadeInUp">
 			<strong>схема работы</strong> с нашей компанией
 		</h2>
-		<h3 class="section-subtitle">
+		<h3 class="section-subtitle wow fadeInUp">
 			Работаем с клиентами из разных отраслей
 		</h3>
 		<div class="scheme-row">
-			<div class="scheme-block scheme-block-1">
+			<div class="scheme-block scheme-block-1 wow fadeInLeft">
 				<div class="scheme-block-wrapper">
 					<img src="img/sh-num (1).png" alt="" class="scheme-block-wrapper__num">
 					<img src="img/shm-k (1).png" alt="" class="scheme-block-wrapper__image">
@@ -1012,7 +1099,7 @@
 					Как итог: Вы экономите до 30%.
 				</p>
 			</div>
-			<div class="scheme-block scheme-block-2 scheme-block-center">
+			<div class="scheme-block scheme-block-2 scheme-block-center wow fadeInUp" data-wow-delay="0.6s">
 				<div class="scheme-block-wrapper">
 					<img src="img/sh-num (2).png" alt="" class="scheme-block-wrapper__num">
 					<img src="img/shm-k (4).png" alt="" class="scheme-block-wrapper__image">
@@ -1028,7 +1115,7 @@
 					Мы предоставим полную отчетность по работе.
 				</p>
 			</div>
-			<div class="scheme-block scheme-block-3 scheme-block-center">
+			<div class="scheme-block scheme-block-3 scheme-block-center wow fadeInUp" data-wow-delay="0.6s">
 				<div class="scheme-block-wrapper">
 					<img src="img/sh-num (3).png" alt="" class="scheme-block-wrapper__num">
 					<img src="img/shm-k (3).png" alt="" class="scheme-block-wrapper__image">
@@ -1042,7 +1129,7 @@
 					В нащей базе более 5000 авто, мы подаем ближайший к Вам автомобиль, избегая долгих подач.
 				</p>
 			</div>
-			<div class="scheme-block scheme-block-4">
+			<div class="scheme-block scheme-block-4 wow fadeInRight">
 				<div class="scheme-block-wrapper">
 					<img src="img/sh-num (4).png" alt="" class="scheme-block-wrapper__num">
 					<img src="img/shm-k (2).png" alt="" class="scheme-block-wrapper__image">
@@ -1063,14 +1150,14 @@
 	<img src="img/samolet.png" alt="" class="advantage-air">
 	<img src="img/adv-logo.png" alt="" class="advantage-logo">
 	<div class="container">
-		<h2 class="advantage-title">
+		<h2 class="advantage-title wow fadeInUp">
 			<strong>преимущества</strong> работы с нами
 		</h2>
-		<h3 class="advantage-subtitle">
+		<h3 class="advantage-subtitle wow fadeInUp">
 			Почему мы лучше других?
 		</h3>
 		<div class="advantage-row">
-			<div class="advantage-block">
+			<div class="advantage-block wow fadeInLeft">
 				<h4 class="advantage-block__title">
 					другие транспортные компании
 				</h4>
@@ -1094,7 +1181,7 @@
 				</ul>
 				<img src="img/delivery-man-isolated-white-background-with-tired-sick-expression__1_-removebg 1.png" alt="" class="advantage-block__img">
 			</div>
-			<div class="advantage-block advantage-block-white">
+			<div class="advantage-block advantage-block-white wow fadeInRight">
 				<h4 class="advantage-block__title">
 					транспортная компания логика груза
 				</h4>
@@ -1116,20 +1203,21 @@
 						гибкость в работе
 					</li>
 				</ul>
-				<img src="img/shutterstock_75239563 копия 1.png" alt="" class="advantage-block__img">
+				<img src="img/air-b-m.png" alt="" class="advantage-block__img mob-true">
+				<img src="img/shutterstock_75239563 копия 1.png" alt="" class="advantage-block__img pc-true">
 			</div>
 		</div>
 	</div>
 </section>
 <section class="trust" id="trust">
-	<h2 class="section-title">
+	<h2 class="section-title wow fadeInUp">
 		<img src="img/Круги.png" alt="" class="trust-krygi"> <br>
 		Нам <strong>доверяют</strong>
 	</h2>
-	<h3 class="section-subtitle">
+	<h3 class="section-subtitle wow fadeInUp">
 		Больше 300 компаний выбрали нас 
 	</h3>
-	<div class="trust-slider-wrapper">
+	<div class="trust-slider-wrapper wow fadeInUp">
 		<div class="trust-slider">
 			<div class="trust-slide-wrapper">
 				<div class="trust-slide">
@@ -1176,17 +1264,18 @@
 	</div>
 </section>
 <section class="cases" id="cases">
-	<img src="img/cases-bg.png" alt="" class="cases-bg">
+	<img src="img/cases-bg.png" alt="" class="cases-bg pc-true">
+	<img src="img/casec-bg-mob.png" alt="" class="cases-bg mob-true">
 	<img src="img/auto-c.png" alt="" class="cases-auto">
 	<div class="container">
-		<h2 class="section-title">
+		<h2 class="section-title wow fadeInUp">
 			НАШИ <strong>ВЫПОЛНЕННЫЕ ПЕРЕВОЗКИ</strong>
 		</h2>
-		<h3 class="section-subtitle">
+		<h3 class="section-subtitle wow fadeInUp">
 			Более 2500 перевозок в год
 		</h3>
 		<div class="cases-slider-wrapper">
-			<div class="cases-slider">
+			<div class="cases-slider wow fadeInLeft">
 				<div class="cases-slide">
 					<span class="cases-slide-name">
 						логика груза
@@ -1322,15 +1411,15 @@
 <section class="compleks" id="compleks">
 	<img src="img/compleks-bg.png" alt="" class="compleks-bg">
 	<div class="container">
-		<h2 class="section-title">
+		<h2 class="section-title wow fadeInUp">
 			полный комплекс <br>
 			<strong>логистических услуг</strong>
 		</h2>
-		<h3 class="section-subtitle">
+		<h3 class="section-subtitle wow fadeInUp">
 			Качественное решение Ваших задач
 		</h3>
 		<div class="compleks-row">
-			<div class="compleks-block">
+			<div class="compleks-block wow fadeInUp" data-wow-delay="0.2s">
 				<img src="img/com-bg.png" alt="" class="compleks-block__bg">
 				<div class="compleks-block-text">
 					<h2 class="compleks-block__title">
@@ -1343,7 +1432,7 @@
 				</div>
 				<img src="img/cm (6).png" alt="" class="compleks-block__img">
 			</div>
-			<div class="compleks-block">
+			<div class="compleks-block wow fadeInUp" data-wow-delay="0.4s">
 				<img src="img/com-bg.png" alt="" class="compleks-block__bg">
 				<div class="compleks-block-text">
 					<h2 class="compleks-block__title">
@@ -1355,7 +1444,7 @@
 				</div>
 				<img src="img/cm (5).png" alt="" class="compleks-block__img">
 			</div>
-			<div class="compleks-block">
+			<div class="compleks-block wow fadeInUp" data-wow-delay="0.6s">
 				<img src="img/com-bg.png" alt="" class="compleks-block__bg">
 				<div class="compleks-block-text">
 					<h2 class="compleks-block__title">
@@ -1367,7 +1456,7 @@
 				</div>
 				<img src="img/cm (4).png" alt="" class="compleks-block__img">
 			</div>
-			<div class="compleks-block">
+			<div class="compleks-block wow fadeInUp" data-wow-delay="0.8s">
 				<img src="img/com-bg.png" alt="" class="compleks-block__bg">
 				<div class="compleks-block-text">
 					<h2 class="compleks-block__title">
@@ -1379,7 +1468,7 @@
 				</div>
 				<img src="img/cm (3).png" alt="" class="compleks-block__img">
 			</div>
-			<div class="compleks-block">
+			<div class="compleks-block wow fadeInUp" data-wow-delay="1s">
 				<img src="img/com-bg.png" alt="" class="compleks-block__bg">
 				<div class="compleks-block-text">
 					<h2 class="compleks-block__title">
@@ -1392,7 +1481,7 @@
 				</div>
 				<img src="img/cm (2).png" alt="" class="compleks-block__img">
 			</div>
-			<div class="compleks-block">
+			<div class="compleks-block wow fadeInUp" data-wow-delay="1.2s">
 				<img src="img/com-bg.png" alt="" class="compleks-block__bg">
 				<div class="compleks-block-text">
 					<h2 class="compleks-block__title">
@@ -1406,8 +1495,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="section-wrapper-form">
-		<form class="section-form">
+	<div class="section-wrapper-form ">
+		<form class="section-form wow fadeInUp">
 			<h3 class="section-form-title">
 				Опишите Вашу задачу — <strong>мы найдем решение!</strong>
 			</h3>
@@ -1439,11 +1528,13 @@
 	</div>
 </section>
 <section class="questions" id="questions">
-	<img src="img/questions-bg.png" alt="" class="questions-bg_left">
-	<img src="img/questions-logo.png" alt="" class="questions-bg_right">
+	<img src="img/questions-bg.png" alt="" class="questions-bg_left pc-true">
+	<img src="img/qwz-mb.png" alt="" class="questions-bg_left mob-true">
+	<img src="img/questions-logo.png" alt="" class="questions-bg_right pc-true">
+	<img src="img/logo-mob.png" alt="" class="questions-bg_right mob-true">
 	<div class="container">
 		<div class="questions-row">
-			<div class="questions-left">
+			<div class="questions-left wow fadeInLeft">
 				<h2 class="section-title">
 					остались <strong>вопросы?</strong>
 				</h2>
@@ -1499,7 +1590,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="questions-right">
+			<div class="questions-right wow fadeInRight">
 				<form action="" class="questions-form">
 					<h3 class="questions-form__title">
 						<strong>Не нашли ответ </strong> <br>
@@ -1534,12 +1625,12 @@
 </section>
 <section class="contacts" id="contacts">
 	<div class="container">
-		<h2 class="section-title">
+		<h2 class="section-title wow fadeInLeft">
 			<strong>Наши контакты — </strong> <br>
 			свяжитесь с нами
 		</h2>
 		<div class="contacts-wrapper">
-			<div class="contacts-row">
+			<div class="contacts-row wow fadeInLeft">
 				<div class="contacts-block contacts-block-active">
 					<span class="contacts-block__title">
 						Головной офис
@@ -1568,7 +1659,7 @@
 						— п. Шушары, ул. Пушкинская, 27/3
 					</p>
 				</div>
-				<div class="contacts-block">
+				<div class="contacts-block contacts-block-last">
 					<span class="contacts-block__title">
 						Представительство
 					</span>
@@ -1578,7 +1669,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="contacts-right">
+			<div class="contacts-right wow fadeInRight">
 				<div class="contacts-top">
 					<img src="img/map-top.png" alt="">
 				</div>
@@ -1593,7 +1684,7 @@
 	<div class="container">
 		<div class="job-block">
 			<img src="img/КП 1.png" alt="" class="job-block-kp">
-			<div class="job-text">
+			<div class="job-text wow wow fadeInLeft">
 				<h3 class="job-text__title">
 					хотите 
 					<strong>работать <br>с нами?</strong>
@@ -1648,8 +1739,8 @@
 		</div>
 	</div>
 </section>
-<footer class="footer" id="footer">
-	<div class="footer-top">
+<footer class="footer " id="footer">
+	<div class="footer-top wow fadeInUp">
 		<div class="container">
 			<div class="footer-top-left">
 				<img src="img/logo-footer.png" alt="" class="footer-logo">
@@ -1711,7 +1802,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer-bottom">
+	<div class="footer-bottom wow fadeInUp">
 		<div class="container">
 			<div class="footer-bottom-left">
 				<span class="footer-bottom__text">
