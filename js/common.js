@@ -63,6 +63,21 @@ $(document).ready(function () {
     prevArrow: $('.section-arrow__left_t'),
     nextArrow: $('.section-arrow__right_t'),
   });
+  $('.reviews-row').slick({
+    infinite: true,
+    variableWidth: true,
+    swipe: true,
+    slidesToShow: 1,
+    mobileFirst: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+     responsive: [
+        {
+           breakpoint: 1000,
+           settings: "unslick"
+        }
+     ]
+  });
   $('.transportation-row').slick({
     infinite: true,
     variableWidth: true,
@@ -72,6 +87,8 @@ $(document).ready(function () {
     prevArrow: $('.section-arrow__left_c'),
     nextArrow: $('.section-arrow__right_c'),
     mobileFirst: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
      responsive: [
         {
            breakpoint: 1000,
@@ -88,6 +105,8 @@ $(document).ready(function () {
     prevArrow: $('.section-arrow__left_c'),
     nextArrow: $('.section-arrow__right_c'),
     mobileFirst: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
      responsive: [
         {
            breakpoint: 1000,
@@ -104,6 +123,8 @@ $(document).ready(function () {
     prevArrow: $('.section-arrow__left_c'),
     nextArrow: $('.section-arrow__right_c'),
     mobileFirst: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
      responsive: [
         {
            breakpoint: 1000,
