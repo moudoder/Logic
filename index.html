@@ -13,8 +13,188 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<nav class="header-nav nav-abc">
+	<div class="nav-top">
+		<div class="container">
+			<a href="/" class="header-nav__logo">
+				<img src="img/logo.svg" alt="">
+				<span class="header-nav__logo__text">
+					ООО «Логика Груза» <br>
+					Грузоперевозки по РФ и СНГ <br>
+					Весь груз застрахован
+				</span>
+				<span class="header-nav__logo__text_mob mob-true">
+					ООО <br>
+					«Логика Груза»
+				</span>
+				<a href="#" class="header-nav__phone_mob btn-call mob-true">
+					<img src="img/phn-mob.png" alt="">
+				</a>
+				<a href="#" class="header-nav__menu_mob mob-true">
+					<img src="img/Меню.png" alt="">
+				</a>
+			</a>
+			<div class="header-nav__block nav-block-1">
+				<img src="img/WhatsApp.svg" alt="" class="header-nav__block__img">
+				<span class="header-nav__block__text">
+					Получите <strong>точный расчет доставки </strong> <br>
+					в <a href="">WhatsApp</a> за 1 минуту
+				</span>
+			</div>
+			<div class="header-nav__block">
+				<img src="img/Иконка.png" alt="" class="header-nav__block__img">
+				<span class="header-nav__block__text">
+					<a href="" class="nav__mail">info@logika-gruzza.ru</a> <br>
+					Почта для Ваших заявок
+				</span>
+			</div>
+			<div class="header-nav__block">
+				<img src="img/Иконка (2).svg" alt="" class="header-nav__block__img">
+				<span class="header-nav__block__text">
+					<a href="" class="nav__mail nav__phn">8 (800) 555-55-55</a> <br>
+					<a href="" class="nav__phone btn-call">Нужен обратный звонок</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="nav-bottom">
+		<div class="container">
+		<ul class="nav-list">
+			<li class="nav-list__item">
+				<a href="#header" class="nav-list__link">
+					предложение
+				</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#auto" class="nav-list__link">
+					наш транспорт
+				</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#transportation" class="nav-list__link">
+					виды грузов
+				</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#about" class="nav-list__link">
+					о компании
+				</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#advantage" class="nav-list__link">
+					преимущества
+				</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#reviews" class="nav-list__link">
+					отзывы
+				</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#compleks" class="nav-list__link">
+					наши услуги
+				</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#contacts" class="nav-list__link">
+					контакты
+				</a>
+			</li>
+		</ul>
+		</div>
+	</div>
+</nav>
+<div class="dark-window"></div>
+<div class="modal-window">
+	<img src="img/close-modal.png" alt="" class="modal-window__close">
+	<h2 class="modal-window__title">
+		перезвоните мне
+	</h2>
+	<h3 class="modal-window__subtitle">
+		Укажите свой номер телефона, и мы <br>
+		свяжемся с Вами в ближайшее время
+	</h3>
+	<div class="section-form-block">
+		<span class="section-form-block__title">
+			Введите телефон
+		</span>
+		<input type="text" class="section-form-block__input" placeholder="+7 (777) 888-88-88">
+	</div>
+	<div class="section-form-btn-block">
+		<a href="#" class="section-form-btn body-btn">
+			<span>отправить заявку</span>
+		</a>
+		<input type="checkbox" checked id="checkx" name="checkbox-1" class="section-form-politic-display">
+		<label for="checkx" class="section-form-politic">
+			Я даю согласие на <a href="">обработку Персональных данных</a>, <br>
+			мы не храним и не распространяем Ваши данные
+		</label>
+	</div>
+</div>
+<div class="modal-thank">
+	<div class="modal-thank-check">
+		<img src="img/221.png" alt="">
+	</div>
+	<div class="modal-thank-inner">
+		<h2 class="modal-thank__title">
+			благоадрим вас <br>
+			за оставленную заявку
+		</h2>
+		<h3 class="modal-thank__subtitle">
+			Наш специалист свяжется с Вами <br>
+			<strong>в течение 15-минут</strong>
+		</h3>
+	</div>
+</div>
+<div class="job-block job-block-modal">
+	<img src="img/КП 1.png" alt="" class="job-block-kp">
+	<img src="img/close-modal.png" alt="" class="modal-window__close">
+	<div class="job-text">
+		<h3 class="job-text__title">
+			оставить заявку
+		</h3>
+		<div class="section-form-block">
+			<span class="section-form-block__title">
+				Ваше имя
+			</span>
+			<input type="text" class="section-form-block__input" placeholder="Укажите Ваше имя">
+		</div>
+		<div class="section-form-block">
+			<span class="section-form-block__title">
+				Введите телефон
+			</span>
+			<input type="text" class="section-form-block__input" placeholder="+7 (777) 888-88-88">
+		</div>
+		<div class="section-form-block">
+			<span class="section-form-block__title">
+				Введите Ваш Email
+			</span>
+			<input type="text" class="section-form-block__input" placeholder="example@mail.ru">
+		</div>
+		<div class="section-form-block section-form-block__lin">
+			<span class="section-form-block__title">
+				Напишите, пожалуйста, Ваши основные
+				направления, наименование груза
+			</span>
+			<input type="text" class="section-form-block__input" placeholder="Москва-Сочи, грузоперевозки">
+		</div>
+		<div class="job-way">
+			
+			<div class="section-form-btn-block">
+				<a href="#" class="section-form-btn body-btn">
+					<span>отправить заявку</span>
+				</a>
+				<input type="checkbox" checked id="checkx" name="checkbox-1" class="section-form-politic-display">
+				<label for="checkx" class="section-form-politic">
+					Я даю согласие на <a href="">обработку Персональных данных</a>, <br>
+					мы не храним и не распространяем Ваши данные
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="body-menu animated fadeInRight slower">
-	<a href="#" class="body-menu-item">
+	<a href="#" class="body-menu-item body-menu-item__form">
 		<div class="body-menu-item__left">
 			Быстрый заказ
 		</div>
@@ -22,7 +202,7 @@
 			<img src="img/box.png" alt="">
 		</div>
 	</a>
-	<a href="#" class="body-menu-item">
+	<a href="https://logika-gruza.ru/kalkulyator-gruzoperevozki/" class="body-menu-item">
 		<div class="body-menu-item__left left-2">
 			онлайн калькулятор
 		</div>
@@ -59,7 +239,7 @@
 		<img src="img/Иконка (2).svg" alt="" class="header-nav__block__img">
 		<span class="header-nav__block__text">
 			<a href="" class="nav__mail nav__phn">8 (800) 555-55-55</a> <br>
-			<a href="" class="nav__phone">Нужен обратный звонок</a>
+			<a href="" class="nav__phone btn-call">Нужен обратный звонок</a>
 		</span>
 	</div>
 	<ul class="nav-list">
@@ -106,6 +286,7 @@
 	</ul>
 </div>
 <header class="header" id="header">
+	<img src="img/mob-hdr.png" alt="" class="header-bg__mobile">
 	<nav class="header-nav wow fadeInUp">
 		<div class="nav-top">
 			<div class="container">
@@ -120,7 +301,7 @@
 						ООО <br>
 						«Логика Груза»
 					</span>
-					<a href="#" class="header-nav__phone_mob mob-true">
+					<a href="#" class="header-nav__phone_mob btn-call mob-true">
 						<img src="img/phn-mob.png" alt="">
 					</a>
 					<a href="#" class="header-nav__menu_mob mob-true">
@@ -145,7 +326,7 @@
 					<img src="img/Иконка (2).svg" alt="" class="header-nav__block__img">
 					<span class="header-nav__block__text">
 						<a href="" class="nav__mail nav__phn">8 (800) 555-55-55</a> <br>
-						<a href="" class="nav__phone">Нужен обратный звонок</a>
+						<a href="" class="nav__phone btn-call">Нужен обратный звонок</a>
 					</span>
 				</div>
 			</div>
@@ -262,7 +443,7 @@
 					Выделенный транспорт  и сборные грузы от 100кг 
 				</h2>
 				<h1 class="header-title">
-					<strong>Грузоперевозки по России <br> и СНГ </strong> <br class="mob-true">в Санкт-Петербурге <br>
+					<strong>Грузоперевозки по России <br> и СНГ  <br class="mob-true">в Санкт-Петербурге <br></strong>
 					с выгодой до 30%
 				</h1>
 				<h3 class="header-text">
@@ -272,7 +453,7 @@
 			<img src="img/Автомобиль.png" alt="" class="header-content__auto">
 		</div>
 		<div class="header-bottom ">
-			<div class="container wow fadeInDown">
+			<div class="container wow fadeInUp">
 				<div class="header-block header-block-1">
 					<span class="header-block__text">
 						В базе более <strong>1100 <br>авто, 1100 городов <br>доставки</strong>
@@ -303,7 +484,7 @@
 		Подача в любой город России за 2 часа
 	</h3>
 	<div class="auto-wrapper">
-		<div class="auto-row wow fadeInDown">
+		<div class="auto-row wow fadeInUp">
 			<div class="auto-slide">
 				<div class="auto-block">
 					<div class="auto-block-wrapper">
@@ -708,7 +889,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="warranty-block-map wow fadeInUp">
+		<div class="warranty-block-map">
 			<img src="img/map.png" alt="">
 			<span>
 				А так же <strong>GPS-отслеживание <br>
@@ -1187,20 +1368,20 @@
 				</h4>
 				<ul class="advantage-block-list">
 					<li class="advantage-block-list__item">
-						Работают в одном городе
+						Работаем во всех регионах
 					</li>
 					<li class="advantage-block-list__item">
-						Ограниченный автопарк
+						В базе более 5000 авто
 					</li>
 					<li class="advantage-block-list__item">
-						Непостоянные водители
+						Проверенные  водители
 					</li>
 					<li class="advantage-block-list__item">
-						Груз не застрахован
+						Весь груз застрахован
 					</li>
 					<li class="advantage-block-list__item">
-						Отсутствует <br>
-						гибкость в работе
+						Все формы оплаты <br class="advantage-block-list__item__br">
+						<span class="advantage-block-list__item__span">(без НДС, с НДС/онлайн)</span>
 					</li>
 				</ul>
 				<img src="img/air-b-m.png" alt="" class="advantage-block__img mob-true">
@@ -1631,7 +1812,7 @@
 		</h2>
 		<div class="contacts-wrapper">
 			<div class="contacts-row wow fadeInLeft">
-				<div class="contacts-block contacts-block-active">
+				<div class="contacts-block contacts-block-active contacts-block-1">
 					<span class="contacts-block__title">
 						Головной офис
 					</span>
@@ -1651,7 +1832,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="contacts-block">
+				<div class="contacts-block contacts-block-2">
 					<span class="contacts-block__title">
 						Центральный склад
 					</span>
@@ -1659,7 +1840,7 @@
 						— п. Шушары, ул. Пушкинская, 27/3
 					</p>
 				</div>
-				<div class="contacts-block contacts-block-last">
+				<div class="contacts-block contacts-block-last contacts-block-3">
 					<span class="contacts-block__title">
 						Представительство
 					</span>
@@ -1669,14 +1850,33 @@
 					</p>
 				</div>
 			</div>
-			<div class="contacts-right wow fadeInRight">
-				<div class="contacts-top">
-					<img src="img/map-top.png" alt="">
+			<div class="contacts-right-wrapper wow fadeInRight">
+				<div class="contacts-right ">
+					<div class="contacts-top">
+						<img src="img/map-top.png" alt="">
+					</div>
+					<div class="contacts-map">
+						<img src="img/map-bottom.png" alt="">
+					</div>
 				</div>
-				<div class="contacts-map">
-					<img src="img/map-bottom.png" alt="">
+				<div class="contacts-right ">
+					<div class="contacts-top">
+						<img src="img/map-top.png" alt="">
+					</div>
+					<div class="contacts-map">
+						<img src="img/map-bottom.png" alt="">
+					</div>
+				</div>
+				<div class="contacts-right ">
+					<div class="contacts-top">
+						<img src="img/map-top.png" alt="">
+					</div>
+					<div class="contacts-map">
+						<img src="img/map-bottom.png" alt="">
+					</div>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 </section>
@@ -1795,7 +1995,7 @@
 					</span>
 				</div>
 				<div class="footer-top-block">
-					<a href="#" class="footer-top__btn body-btn">
+					<a href="#" class="footer-top__btn btn-call body-btn">
 						<span>перезвоните мне</span>
 					</a>
 				</div>
